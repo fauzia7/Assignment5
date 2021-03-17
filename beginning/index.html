@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/code.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {margin-bottom: 30px;}
+        label {font-weight: bold;}
+        input, select {margin-bottom: 10px;}
+        form {width: 30%; padding: 20px;}
+        #empForm {border: 2px solid red ; background-color: lightgrey;}
+        .form-control {width: 50%;}
+       
+    </style>
+</head>
+<body class="mt-2 ml-4">
+    <h1 id="heading">Employee Management System</h1>
+    <form id="empForm">
+        
+            <div class="form-group">
+                <label for="validationCustom01">8-Digit Employee-ID</label>
+                <input type="text" class="form-control" maxlength="8" id="id" required>
+            </div>
+            <div class="form-group">
+                <label for="validationCustom01">Full name</label>
+                <input type="text" class="form-control"  id="name" required>
+            </div>
+            <div class="form-group ">
+                <label for="validationCustom01">4-Digit Extension</label>
+                <input type="text" class="form-control" maxlength="4" id="ext" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Department</label>
+                <select class="form-control" id="department" required>
+                  <option>Administrative</option>
+                  <option>Engineering</option>
+                  <option>Executive</option>
+                  <option>Marketing</option>
+                  <option>Quality Assurance</option>
+                  <option>Sales</option>
+                </select>
+              </div>
+
+            <button type="submit" class="btn btn-primary" id="submit" value="Add Employee">Add Employee</button>
+          
+     
+    </form>
+
+
+
+   
+</body>
+</html>
